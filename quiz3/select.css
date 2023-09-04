@@ -1,0 +1,13 @@
+select {
+  width: 100px;
+  height: 100px;
+  margin-left: 700px;
+}
+
+.box {
+  margin-left: 700px;
+  margin-top: 20px;
+}
+div {
+  margin: 5px;
+}

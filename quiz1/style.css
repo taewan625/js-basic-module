@@ -1,0 +1,15 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* table {
+  border: solid;
+} */
+td {
+  border: solid;
+}
+td:hover {
+  color: red;
+}
