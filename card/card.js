@@ -117,9 +117,9 @@ function initGame() {
   // back 카드를 담는 array
   let tmpBack = [];
   for (i = 0; i < 52; i++) {
-    tmpBack.push(`<img src="img/back.png" id=${i}>`);
+    tmpBack.push(`<img src="card/img/back.png" id=${i}>`);
     board.innerHTML = tmpBack.join("");
-    myCards.push(new MyCard(i % 13, Math.floor(i / 13), `img/${i}.png`)); // index 번호를 array에 담는다.
+    myCards.push(new MyCard(i % 13, Math.floor(i / 13), `card/img/${i}.png`)); // index 번호를 array에 담는다.
   }
 
   // 1.3. 배열을 섞는다
@@ -182,7 +182,7 @@ function handleShowBtn() {
 //4. hide event function
 function handleHideBtn() {
   for (let card of cards) {
-    card.setAttribute("src", "img/back.png");
+    card.setAttribute("src", "/card/img/back.png");
   }
 }
 
@@ -223,7 +223,7 @@ function handleCheckTwoTime(card) {
         topPosition = (top[0] + top[1]) / 2;
         leftPosition = (left[0] + left[1]) / 2;
         setTimeout(function () {
-          cards[checkCard.index].setAttribute("src", "img/back.png");
+          cards[checkCard.index].setAttribute("src", "card/img/back.png");
         }, 1000);
       }
       // style 적용하기
